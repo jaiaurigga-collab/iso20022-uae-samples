@@ -11,6 +11,7 @@
         <EndToEndId>E2E-BAD-01</EndToEndId>
       </PmtId>
       <IntrBkSttlmAmt Ccy="aed">1000</IntrBkSttlmAmt>
+      <IntrBkSttlmDt>17-11-2026</IntrBkSttlmDt>
       <DbtrAcct>
         <Id>
           <IBAN>AE990331234567890123456</IBAN>
