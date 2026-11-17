@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.001.001.09">
+  <CstmrCdtTrfInitn>
+    <GrpHdr>
+      <MsgId>PAIN001-BATCH-2026-44</MsgId>
+      <CreDtTm>2026-11-17T09:15:00+04:00</CreDtTm>
+      <NbOfTxs>1</NbOfTxs>
+      <CtrlSum>12500.50</CtrlSum>
+      <InitgPty>
+        <Nm>Aurigga Treasury Ops</Nm>
+      </InitgPty>
+    </GrpHdr>
+    <PmtInf>
+      <PmtInfId>PMT-INF-001</PmtInfId>
+      <PmtMtd>TRF</PmtMtd>
+      <ReqdExctnDt>
+        <Dt>2026-11-18</Dt>
+      </ReqdExctnDt>
+      <Dbtr>
+        <Nm>Aurigga Holdings</Nm>
+      </Dbtr>
+      <DbtrAcct>
+        <Id>
+          <IBAN>AE290350000000123456789</IBAN>
+        </Id>
+      </DbtrAcct>
+      <DbtrAgt>
+        <FinInstnId>
+          <BICFI>NBADAEAAXXX</BICFI>
+        </FinInstnId>
+      </DbtrAgt>
+      <CdtTrfTxInf>
+        <PmtId>
+          <EndToEndId>E2E-VENDOR-771</EndToEndId>
+        </PmtId>
+        <Amt>
+          <InstdAmt Ccy="AED">12500.50</InstdAmt>
+        </Amt>
+        <CdtrAgt>
+          <FinInstnId>
+            <BICFI>ADCBAEAA</BICFI>
+          </FinInstnId>
+        </CdtrAgt>
+        <Cdtr>
+          <Nm>Al Bateen Advisory Services</Nm>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>AE740030010203040506070</IBAN>
+          </Id>
+        </CdtrAcct>
+      </CdtTrfTxInf>
+    </PmtInf>
+  </CstmrCdtTrfInitn>
+</Document>
