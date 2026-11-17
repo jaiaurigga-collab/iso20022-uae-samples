@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.053.001.08">
+  <BkToCstmrStmt>
+    <GrpHdr>
+      <MsgId>CAMT053-UAE-20261117-01</MsgId>
+      <CreDtTm>2026-11-17T18:00:00+04:00</CreDtTm>
+    </GrpHdr>
+    <Stmt>
+      <Id>STMT-2026-11-17-001</Id>
+      <CreDtTm>2026-11-17T18:00:00+04:00</CreDtTm>
+      <Acct>
+        <Id>
+          <IBAN>AE070331234567890123456</IBAN>
+        </Id>
+        <Ccy>AED</Ccy>
+        <Svcr>
+          <FinInstnId>
+            <BICFI>BOMLAEADXXX</BICFI>
+          </FinInstnId>
+        </Svcr>
+      </Acct>
+      <Bal>
+        <Tp>
+          <CdOrPrtry>
+            <Cd>OPBD</Cd>
+          </CdOrPrtry>
+        </Tp>
+        <Amt Ccy="AED">250000.00</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Dt>
+          <Dt>2026-11-17</Dt>
+        </Dt>
+      </Bal>
+      <Bal>
+        <Tp>
+          <CdOrPrtry>
+            <Cd>CLBD</Cd>
+          </CdOrPrtry>
+        </Tp>
+        <Amt Ccy="AED">295000.00</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Dt>
+          <Dt>2026-11-17</Dt>
+        </Dt>
+      </Bal>
+      <Ntry>
+        <Amt Ccy="AED">45000.00</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Sts>
+          <Cd>BOOK</Cd>
+        </Sts>
+        <BookgDt>
+          <Dt>2026-11-17</Dt>
+        </BookgDt>
+        <NtryDtls>
+          <TxDtls>
+            <Refs>
+              <EndToEndId>E2E-INV-2026-884</EndToEndId>
+              <UETR>97ed4827-7b6f-4491-a06f-b548d5a7512d</UETR>
+            </Refs>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+    </Stmt>
+  </BkToCstmrStmt>
+</Document>
