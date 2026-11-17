@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
+    <FIToFICstmrCdtTrf>
+      <GrpHdr>
+        <MsgId>AURIGGA-UAE-20261117-001</MsgId>
+        <CreDtTm>2026-11-17T11:30:00+04:00</CreDtTm>
+        <NbOfTxs>1</NbOfTxs>
+        <SttlmInf>
+          <SttlmMtd>CLRG</SttlmMtd>
+        </SttlmInf>
+      </GrpHdr>
+      <CdtTrfTxInf>
+        <PmtId>
+          <InstrId>INSTR-99281</InstrId>
+          <EndToEndId>E2E-INV-2026-884</EndToEndId>
+          <UETR>97ed4827-7b6f-4491-a06f-b548d5a7512d</UETR>
+        </PmtId>
+        <IntrBkSttlmAmt Ccy="AED">45000.00</IntrBkSttlmAmt>
+        <IntrBkSttlmDt>2026-11-17</IntrBkSttlmDt>
+        <ChrgBr>SLEV</ChrgBr>
+        <Dbtr>
+          <Nm>Aurigga Technology Solutions LLC</Nm>
+        </Dbtr>
+        <DbtrAcct>
+          <Id>
+            <IBAN>AE070331234567890123456</IBAN>
+          </Id>
+        </DbtrAcct>
+        <DbtrAgt>
+          <FinInstnId>
+            <BICFI>BOMLAEADXXX</BICFI>
+          </FinInstnId>
+        </DbtrAgt>
+        <CdtrAgt>
+          <FinInstnId>
+            <BICFI>EBILAEADXXX</BICFI>
+          </FinInstnId>
+        </CdtrAgt>
+        <Cdtr>
+          <Nm>Gulf Enterprise Partners FZ-LLC</Nm>
+        </Cdtr>
+        <CdtrAcct>
+          <Id>
+            <IBAN>AE210260001015321456789</IBAN>
+          </Id>
+        </CdtrAcct>
+      </CdtTrfTxInf>
+    </FIToFICstmrCdtTrf>
+</Document>
