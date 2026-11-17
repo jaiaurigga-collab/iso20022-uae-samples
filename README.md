@@ -6,8 +6,8 @@ A curated collection of clean, valid **ISO 20022 XML test payloads** tailored fo
 
 Need to validate your own XML payloads or generate QA test IBANs without sending sensitive payment data to a backend server? Use our free browser-native utilities:
 
-* **[ISO 20022 XML Message Validator](https://aurigga.com/tools/iso20022-validator.html)** — Validates XML well-formedness, mandatory `pacs.008` / `pain.001` / `camt.053` elements, ISO 4217 currency attributes, BIC syntax, and embedded UAE IBAN checksums locally in your browser.
-* **[UAE IBAN & SWIFT/BIC Validator](https://aurigga.com/tools/uae-iban-validator.html)** — Verifies 23-character UAE IBAN structure, identifies the issuing UAE bank from the 3-digit bank code, validates BIC codes, and generates valid QA test IBANs.
+* **[ISO 20022 XML Message Validator](https://aurigga.com/tools/iso20022-validator.php)** — Validates XML well-formedness, mandatory `pacs.008` / `pain.001` / `camt.053` elements, ISO 4217 currency attributes, BIC syntax, and embedded UAE IBAN checksums locally in your browser.
+* **[UAE IBAN & SWIFT/BIC Validator](https://aurigga.com/tools/uae-iban-validator.php)** — Verifies 23-character UAE IBAN structure, identifies the issuing UAE bank from the 3-digit bank code, validates BIC codes, and generates valid QA test IBANs.
 * **[Aurigga Free Fintech & Banking Tools](https://aurigga.com/tools/)** — Full directory of client-side GCC banking utilities.
 
 ---
