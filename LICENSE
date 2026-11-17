@@ -1,21 +1,82 @@
-MIT License
+---
 
-Copyright (c) 2026 jaiaurigga-collab
+### 2. `samples/camt.053-uae-statement.xml`
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+You already have the `pacs.008`, `pain.001`, and `broken-payload` XML files embedded in your validator script. Add this **`camt.053`** sample as the fourth file so all three schemas listed on your [ISO 20022 XML Message Validator](https://aurigga.com/tools/iso20022-validator.php) have matching downloadable examples:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.053.001.08">
+  <BkToCstmrStmt>
+    <GrpHdr>
+      <MsgId>CAMT053-UAE-20261117-01</MsgId>
+      <CreDtTm>2026-11-17T18:00:00+04:00</CreDtTm>
+    </GrpHdr>
+    <Stmt>
+      <Id>STMT-2026-11-17-001</Id>
+      <CreDtTm>2026-11-17T18:00:00+04:00</CreDtTm>
+      <Acct>
+        <Id>
+          <IBAN>AE070331234567890123456</IBAN>
+        </Id>
+        <Ccy>AED</Ccy>
+        <Svcr>
+          <FinInstnId>
+            <BICFI>BOMLAEADXXX</BICFI>
+          </FinInstnId>
+        </Svcr>
+      </Acct>
+      <Bal>
+        <Tp>
+          <CdOrPrtry>
+            <Cd>OPBD</Cd>
+          </CdOrPrtry>
+        </Tp>
+        <Amt Ccy="AED">250000.00</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Dt>
+          <Dt>2026-11-17</Dt>
+        </Dt>
+      </Bal>
+      <Bal>
+        <Tp>
+          <CdOrPrtry>
+            <Cd>CLBD</Cd>
+          </CdOrPrtry>
+        </Tp>
+        <Amt Ccy="AED">295000.00</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Dt>
+          <Dt>2026-11-17</Dt>
+        </Dt>
+      </Bal>
+      <Ntry>
+        <Amt Ccy="AED">45000.00</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Sts>
+          <Cd>BOOK</Cd>
+        </Sts>
+        <BookgDt>
+          <Dt>2026-11-17</Dt>
+        </BookgDt>
+        <BkTxCd>
+          <Domn>
+            <Cd>PMNT</Cd>
+            <Fmly>
+              <Cd>RCDT</Cd>
+              <SubFmlyCd>ESCT</SubFmlyCd>
+            </Fmly>
+          </Domn>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs>
+              <EndToEndId>E2E-INV-2026-884</EndToEndId>
+              <UETR>97ed4827-7b6f-4491-a06f-b548d5a7512d</UETR>
+            </Refs>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+    </Stmt>
+  </BkToCstmrStmt>
+</Document>
